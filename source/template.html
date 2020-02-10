@@ -1,0 +1,20 @@
+<div class="label default-question-text-size">{{{LABEL}}}</div>
+
+<div class="hint default-hint-text-size">{{{HINT}}}</div>
+
+<form class="default-answer-text-size">
+  {{#CHOICES}}
+    <input 
+      type="radio" 
+      value="{{CHOICE_INDEX}}" 
+      name="opt" 
+      {{#CHOICE_SELECTED}}checked="checked"{{/CHOICE_SELECTED}} 
+      {{#READONLY}}disabled{{/READONLY}}
+    />
+    <!-- if there's a choice image, show that image-->
+    {{#CHOICE_IMAGE}}<span><img src="{{CHOICE_IMAGE}}"/></span>{{/CHOICE_IMAGE}}
+    <!-- otherwise, show the choice label -->
+    {{^CHOICE_IMAGE}}<span>{{CHOICE_LABEL}}</span>{{/CHOICE_IMAGE}}
+    <br />
+  {{/CHOICES}}
+</form>
