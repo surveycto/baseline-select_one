@@ -26,8 +26,12 @@
 .choice-label {
     cursor: pointer;
 }
-.choice-label:disabled {
-    opacity: .5;
+.choice-input:disabled {
+    cursor: default;
+}
+.choice-input:disabled + .choice-label {
+    opacity: .75;
+    cursor: default;
 }
 .choice-label-image {
     max-width: 100%;
