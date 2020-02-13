@@ -9,3 +9,26 @@
     color: rgba(0,0,0,.65);
     font-style: italic;
 }
+
+.choices-container {
+    padding: .5rem;
+}
+.choice-container {
+    margin: .5rem;
+    display: flex;
+    align-items: baseline;
+}
+.choice-input {
+    font-size: 4rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.choice-label {
+    cursor: pointer;
+}
+.choice-label:disabled {
+    opacity: .5;
+}
+.choice-label-image {
+    max-width: 100%;
+}

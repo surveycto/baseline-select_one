@@ -23,19 +23,23 @@
 
 <div class="hint default-hint-text-size">{{{HINT}}}</div>
 
-<form class="default-answer-text-size">
+<form class="choices-container">
   {{#CHOICES}}
+  <div class="choice-container">
     <input 
       type="radio" 
-      value="{{CHOICE_INDEX}}" 
+      value="{{CHOICE_VALUE}}" 
       name="opt" 
+      class="choice-input"
+      id="{{CHOICE_INDEX}}"
       {{#CHOICE_SELECTED}}checked="checked"{{/CHOICE_SELECTED}} 
       {{#READONLY}}disabled{{/READONLY}}
     />
-    <!-- if there's a choice image, show that image-->
-    {{#CHOICE_IMAGE}}<span><img src="{{CHOICE_IMAGE}}"/></span>{{/CHOICE_IMAGE}}
-    <!-- otherwise, show the choice label -->
-    {{^CHOICE_IMAGE}}<span>{{CHOICE_LABEL}}</span>{{/CHOICE_IMAGE}}
-    <br />
+    <label class="choice-label" for="{{CHOICE_INDEX}}">
+      <div class="choice-label-text default-answer-text-size">{{CHOICE_LABEL}}</div>
+      <!-- if there's a choice image, show that image-->
+      {{#CHOICE_IMAGE}}<img src="{{CHOICE_IMAGE}}" class="choice-label-image" />{{/CHOICE_IMAGE}}
+    </label>
+  </div>
   {{/CHOICES}}
 </form>
