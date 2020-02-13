@@ -1,7 +1,7 @@
 {
 	"name" : "Basic select_one field",
 	"author" : "Dobility",
-	"version": "3.0.7",
+	"version": "3.0.8",
 	"supportedFieldTypes": ["select_one"],
 	"hideDefaultRequiredMessage": false,
 	"hideDefaultConstraintMessage": false
