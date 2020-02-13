@@ -10,11 +10,21 @@
     font-style: italic;
 }
 
-.choices-container {
+/* choice spacing for web collect */
+.web-collect .choices-container {
     padding: .5rem;
 }
-.choice-container {
+.web-collect .choice-container {
     margin: .75rem .5rem;
+}
+
+/* choice spacing for android and ios collect */
+.android-collect .choice-container,
+.ios-collect .choice-container {
+    margin: 1rem 0;
+}
+
+.choice-container {
     display: flex;
     align-items: baseline;
 }
@@ -33,6 +43,22 @@
     opacity: .5;
     cursor: default;
 }
-.choice-label-image {
+.web-collect .choice-label-image {
     max-width: 100%;
+}
+/* images in choice labels are displayed centered in android and ios collect */
+.android-collect .choice-label,
+.ios-collect .choice-label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+.android-collect .choice-label-text,
+.ios-collect .choice-label.text {
+    width: 100%;
+}
+.android-collect .choice-label-image,
+.ios-collect .choice-label-image {
+    max-width: 75%; 
 }
