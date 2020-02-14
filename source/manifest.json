@@ -1,5 +1,5 @@
 {
-	"name" : "Basic select_one field",
+	"name" : "Baseline select_one field",
 	"author" : "Dobility",
 	"version": "3.0.22",
 	"supportedFieldTypes": ["select_one"],

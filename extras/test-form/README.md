@@ -5,7 +5,7 @@
 This form contains a comprehensive set of fields, which is intended to show all the possible states or configurations of a text field (cases). Each case has 2 fields:
 
 1. Without a field plug-in (default SurveyCTO appearance)
-1. With the *basic-text-field* plug-in applied
+1. With the *baseline-select_one* plug-in applied
 
 As you go through the form, you can see the way each case is rendered, first in the default SurveyCTO manner, and second when it is rendered with the plug-in. This will allow you to quickly and easily see the effects of the plug-in on each case. 
 
@@ -18,5 +18,5 @@ As you go through the form, you can see the way each case is rendered, first in 
     [test_image.jpeg](test_image.jpeg)  
     [test_video.mp4](test_video.mp4)
 1. Attach the field plug-in to that form.  
-    [basic-text-field.fieldplugin.zip](/../../)  
-    *Note: this test form expects the plug-in name to be basic-text-field.fieldplugin.zip. If you rename the plug-in, you will need to edit the form definition to look for the new plug-in.*
+    [baseline-select_one.fieldplugin.zip](/../../)  
+    *Note: this test form expects the plug-in name to be baseline-select_one.fieldplugin.zip. If you rename the plug-in, you will need to edit the form definition to look for the new plug-in.*

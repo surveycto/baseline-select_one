@@ -30,7 +30,7 @@ A simple replacement for the default select_one field. Use this as a starting te
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [basic-select_one-field.fieldplugin.zip](basic-select_one-field.fieldplugin.zip) file from this repo, and attach it to your form.
+**To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](baseline-select_one.fieldplugin.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
