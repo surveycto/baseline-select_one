@@ -15,13 +15,15 @@
     padding: .5rem;
 }
 .web-collect .choice-container {
-    margin: .75rem .5rem;
+    margin: .1rem 0;
+    padding: .65rem .5rem;
 }
 
 /* choice spacing for android and ios collect */
 .android-collect .choice-container,
 .ios-collect .choice-container {
-    margin: 1rem 0;
+    margin: .1rem 0;
+    padding: .9rem 0;
 }
 
 .choice-container {
@@ -61,4 +63,9 @@
 .android-collect .choice-label-image,
 .ios-collect .choice-label-image {
     max-width: 75%; 
+}
+
+/* quick appearance styles */
+.appearance-quick {
+    background-color: #EEE;
 }
