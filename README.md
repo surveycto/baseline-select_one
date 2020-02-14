@@ -1,4 +1,4 @@
-# basic-select_one-field
+# Baseline select_one field
 
 ## Description
 
@@ -17,14 +17,16 @@ A simple replacement for the default select_one field. Use this as a starting te
 | media:audio | Yes |
 | media:video | Yes |
 | `quick` appearance | Yes |
-| `minimal` appearance | Yes |
-| `compact` appearance | Yes |
-| `compact-#` appearance | Yes |
-| `quickcompact` appearance | Yes |
-| `quickcompact-#` appearance | Yes |
-| `likert` appearance | Yes |
-| `likert-min` appearance | Yes |
-| `likert-mid` appearance | Yes |
+| `minimal` appearance | No* |
+| `compact` appearance | No* |
+| `compact-#` appearance | No* |
+| `quickcompact` appearance | No* |
+| `quickcompact-#` appearance | No* |
+| `likert` appearance | No* |
+| `likert-min` appearance | No* |
+| `likert-mid` appearance | No* |
+
+*Note: this plug-in is in active development and should support all of these appearance options within a couple weeks.*
 
 ## How to use
 
@@ -42,4 +44,4 @@ To create your own field plug-in using this as a template, follow these steps:
 1. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 ## More resources
-More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/field-plug-in-resources](https://github.com/surveycto/field-plug-in-resources)
