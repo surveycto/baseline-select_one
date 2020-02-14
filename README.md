@@ -26,7 +26,7 @@ A simple replacement for the default select_one field. Use this as a starting te
 | `likert-min` appearance | No* |
 | `likert-mid` appearance | No* |
 
-*Note: this plug-in is in active development and should support all of these appearance options within a couple weeks.*
+**Note: this plug-in is in active development and should support all of these appearance options within a couple weeks.*
 
 ## How to use
 
