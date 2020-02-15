@@ -1,5 +1,7 @@
 # Baseline select_one field
 
+![Default appearance for the 'baseline-select_one' field plug-in](extras/preview.jpg)
+
 ## Description
 
 A simple replacement for the default select_one field. Use this as a starting template when creating your own select_one field plug-in.
