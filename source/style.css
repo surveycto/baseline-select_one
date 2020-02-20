@@ -12,17 +12,19 @@
 
 /* choice spacing for web collect */
 .web-collect .choices-container {
-    padding: .5rem;
+    margin: .2rem 0;
 }
-.web-collect .choice-container {
-    margin: .1rem 0;
-    padding: .65rem .5rem;
+.web-collect .choice-container .choice-label {
+    padding: .5rem;
 }
 
 /* choice spacing for android and ios collect */
 .android-collect .choice-container,
 .ios-collect .choice-container {
     margin: .1rem 0;
+}
+.android-collect .choice-container .choice-label,
+.ios-collect .choice-container .choice-label {
     padding: .9rem 0;
 }
 
@@ -37,7 +39,10 @@
 }
 .choice-label {
     cursor: pointer;
+    flex: 1;
 }
+
+/* formatting for disabled fields */
 .choice-input:disabled {
     cursor: default;
 }
@@ -45,6 +50,8 @@
     opacity: .5;
     cursor: default;
 }
+
+/* formatting for choices with images */
 .web-collect .choice-label-image {
     max-width: 100%;
 }
@@ -65,7 +72,10 @@
     max-width: 75%; 
 }
 
-/* quick appearance styles */
-.appearance-quick {
+/* formatting for quick appearance styles */
+.appearance-quick .choice-input {
     background-color: #EEE;
+}
+.appearance-quick .choice-input:hover {
+    background-color: #E1F4FD;
 }
