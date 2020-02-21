@@ -23,10 +23,13 @@ for(var i = 0; i < buttons.length; i++){
 
 // quick appearance
 if ( fieldProperties.APPEARANCE.includes("quick") == true ) {
-  // add the appearance-quick class to all the options
+  // go through all the available choices
   window.onload = function() {
     for(var i = 0; i < choiceContainers.length; i++){
+      // add the 'appearance-quick' class
       choiceContainers[i].classList.add("appearance-quick");
+      // insert the 'quick' icon
+      choiceContainers[i].getElementsByClassName("choice-label-text")[0].insertAdjacentHTML('beforeend','<svg class="quick-appearance-icon"><use xlink:href="#quick-appearance-icon" /></svg>');
     }
   }
 } 
