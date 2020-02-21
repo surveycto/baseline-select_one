@@ -12,7 +12,7 @@ As you go through the form, you can see the way each case is rendered, first in 
 ## How to use this test form
 
 1. Upload the test form definition to a SurveyCTO server.  
-    [plugin_test_form_text.xlsx](plugin_test_form_text.xlsx)
+    [plugin_test_form_select_one.xlsx](plugin_test_form_select_one.xlsx)
 1. Upload all the media files as attachments to that form.  
     [test_audio.mp3](test_audio.mp3)  
     [test_image.jpeg](test_image.jpeg)  
