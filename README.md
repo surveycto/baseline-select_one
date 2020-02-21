@@ -19,7 +19,7 @@ A simple replacement for the default select_one field. Use this as a starting te
 | media:audio | Yes |
 | media:video | Yes |
 | `quick` appearance | Yes |
-| `minimal` appearance | No* |
+| `minimal` appearance | Yes |
 | `compact` appearance | No* |
 | `compact-#` appearance | No* |
 | `quickcompact` appearance | No* |
