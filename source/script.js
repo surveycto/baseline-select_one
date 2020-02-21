@@ -33,3 +33,23 @@ if ( fieldProperties.APPEARANCE.includes("quick") == true ) {
     }
   }
 } 
+
+// minimal appearance
+if ( fieldProperties.APPEARANCE.includes("minimal") == true ) {
+  // find the select dropdwon element
+  var selectChoices = document.getElementById("select-dropdown-container");
+  // hide the default radio buttons
+  document.getElementById("radio-buttons-container").style.display = "none";
+  // show the select dropdown
+  selectChoices.style.display = "block";
+  // 'set answer' must be handled slightly differently
+  selectChoices.onchange = change;
+  // 'clear answer' must be handled slightly differently
+  function clearAnswer() {
+    selectChoices.value = "";
+  }
+  // if there is already a selected choice, set the current value to that choice
+  window.onload = function() {
+    
+  }
+} 
