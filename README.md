@@ -2,6 +2,11 @@
 
 ![Default appearance for the 'baseline-select_one' field plug-in](extras/preview.jpg)
 
+<img src="extras/preview-likert.jpg" alt="likert appearance" title="likert appearance" width="100px"/>
+<img src="extras/preview-minimal.jpg" alt="minimal appearance" title="minimal appearance" width="100px"/>
+<img src="extras/preview-quick.jpg" alt="quick appearance" title="quick appearance" width="100px"/>
+
+
 ## Description
 
 A simple replacement for the default select_one field. Use this as a starting template when creating your own select_one field plug-in.
