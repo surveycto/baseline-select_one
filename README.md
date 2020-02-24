@@ -2,7 +2,7 @@
 
 ![Default appearance for the 'baseline-select_one' field plug-in](extras/preview.jpg)
 
-| | | |
+| likert | minimal | quick |
 | --- | --- | --- |
 | <img src="extras/preview-likert.jpg" alt="likert appearance" title="likert appearance" width="100px"/> | <img src="extras/preview-minimal.jpg" alt="minimal appearance" title="minimal appearance" width="100px"/> | <img src="extras/preview-quick.jpg" alt="quick appearance" title="quick appearance" width="100px"/> |
 
