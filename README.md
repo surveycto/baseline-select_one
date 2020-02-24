@@ -20,15 +20,15 @@ A simple replacement for the default select_one field. Use this as a starting te
 | media:video | Yes |
 | `quick` appearance | Yes |
 | `minimal` appearance | Yes |
-| `compact` appearance | No* |
-| `compact-#` appearance | No* |
-| `quickcompact` appearance | No* |
-| `quickcompact-#` appearance | No* |
-| `likert` appearance | No* |
-| `likert-min` appearance | No* |
-| `likert-mid` appearance | No* |
+| `compact` appearance | No |
+| `compact-#` appearance | No |
+| `quickcompact` appearance | No |
+| `quickcompact-#` appearance | No |
+| `likert` appearance | Yes |
+| `likert-min` appearance | Yes* |
+| `likert-mid` appearance | No |
 
-**Note: this plug-in is in active development and should support all of these appearance options within a couple weeks.*
+**Note: this plug-in works well for the likert-min appearance when the field label is short, and does not contain an image, audio, or video. This is a known limitation currently.
 
 ## How to use
 

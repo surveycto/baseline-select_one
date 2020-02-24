@@ -16,6 +16,15 @@ else if (fieldProperties.APPEARANCE.includes("likert") === true) {
   radioButtonsContainer.parentElement.removeChild(radioButtonsContainer); // remove the default radio buttons
   selectDropDownContainer.parentElement.removeChild(selectDropDownContainer); // remove the select dropdown contrainer
   likertContainer.style.display = "flex"; // show the likert container
+  // likert-min appearance
+  if (fieldProperties.APPEARANCE.includes("likert-min") === true) {
+    var likertChoices = document.getElementsByClassName('likert-choice-container');
+    for (var i = 1; i < likertChoices.length-1; i++) {
+      likertChoices[i].querySelector('.likert-choice-label').style.display = "none"; // hide all choice labels except the first and last
+    }
+    likertChoices[0].querySelector('.likert-choice-label').classList.add("likert-min-choice-label-first"); // apply a special class to the first choice label
+    likertChoices[likertChoices.length-1].querySelector('.likert-choice-label').classList.add("likert-min-choice-label-last"); // apply a special class to the last choice label
+  }
 }
 // all other appearances
 else {
