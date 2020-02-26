@@ -51,4 +51,9 @@ To create your own field plug-in using this as a template, follow these steps:
 1. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 ## More resources
-More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/field-plug-in-resources](https://github.com/surveycto/field-plug-in-resources)
+
+* **Test form**  
+You can find a form definition in this repo here: [extras/test-form](extras/test-form). This form will help you compare your text field plug-in to the default text field. [Click here for instructions](/extras/test-form/README.md).
+
+* **Developer documentation**  
+More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
