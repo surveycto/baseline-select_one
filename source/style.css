@@ -81,7 +81,7 @@
     justify-content: center;
 }
 .android-collect .choice-label-text,
-.ios-collect .choice-label.text {
+.ios-collect .choice-label-text {
     width: 100%;
 }
 .android-collect .choice-label-image,
