@@ -115,6 +115,10 @@
     width: 1em;
 }
 
+.choices-container[dir="rtl"] .appearance-quick .quick-appearance-icon {
+    float: left;
+}
+
 /* 'minimal' appearance */
 
 #select-dropdown-container {
