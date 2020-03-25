@@ -3,6 +3,15 @@ var radioButtonsContainer = document.getElementById("radio-buttons-container"); 
 var selectDropDownContainer = document.getElementById("select-dropdown-container"); // minimal appearance
 var likertContainer = document.getElementById("likert-container"); // likert
 
+// Detect right-to-left languages
+function isRTL(s){
+  var ltrChars    = 'A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF'+'\u2C00-\uFB1C\uFDFE-\uFE6F\uFEFD-\uFFFF',
+      rtlChars    = '\u0591-\u07FF\uFB1D-\uFDFD\uFE70-\uFEFC',
+      rtlDirCheck = new RegExp('^[^'+ltrChars+']*['+rtlChars+']');
+
+  return rtlDirCheck.test(s);
+}
+
 // Prepare the current webview, making adjustments for any appearance options
 
 // minimal appearance
@@ -28,6 +37,10 @@ else if (fieldProperties.APPEARANCE.includes("likert") === true) {
 }
 // all other appearances
 else {
+  if (fieldProperties.LANGUAGE !== null && isRTL(fieldProperties.LANGUAGE)) {
+    radioButtonsContainer.dir = "rtl";
+  }
+
   selectDropDownContainer.parentElement.removeChild(selectDropDownContainer); // remove the select dropdown contrainer
   likertContainer.parentElement.removeChild(likertContainer); // remove the likert container
   // quick appearance
