@@ -23,7 +23,7 @@
 
 <div class="hint default-hint-text-size">{{{HINT}}}</div>
 
-<!-- This is what will be shown by default -->
+<!-- This is the input area that will be shown by default -->
 <form class="choices-container" id="radio-buttons-container" dir="auto">
   {{#CHOICES}}
   <div class="choice-container {{#CHOICE_SELECTED}}selected{{/CHOICE_SELECTED}}">
@@ -38,8 +38,8 @@
     />
     <label class="choice-label" for="{{CHOICE_INDEX}}">
       <div class="choice-label-text default-answer-text-size">
-        {{CHOICE_LABEL}}
-        <!-- this is where the icon will show up when using the 'quick' appearance -->
+        {{{CHOICE_LABEL}}}
+        <!-- this is where the icon will be inserted if the field has the 'quick' appearance -->
       </div>
       <!-- if there's a choice image, show that image-->
       {{#CHOICE_IMAGE}}<img src="{{CHOICE_IMAGE}}" class="choice-label-image" />{{/CHOICE_IMAGE}}
@@ -75,7 +75,7 @@
     </div>
     <label class="likert-choice-label" for="{{CHOICE_INDEX}}">
       <div class="likert-choice-label-text default-answer-text-size">
-        {{CHOICE_LABEL}}
+        {{{CHOICE_LABEL}}}
       </div>
       <!-- if there's a choice image, show that image-->
       {{#CHOICE_IMAGE}}<img src="{{CHOICE_IMAGE}}" class="likert-choice-label-image" />{{/CHOICE_IMAGE}}
