@@ -6,10 +6,11 @@
 | --- | --- | --- |
 | <img src="extras/baseline-select_one-likert.jpg" alt="likert appearance" title="likert appearance" width="100px"/> | <img src="extras/baseline-select_one-minimal.jpg" alt="minimal appearance" title="minimal appearance" width="100px"/> | <img src="extras/baseline-select_one-quick.jpg" alt="quick appearance" title="quick appearance" width="100px"/> |
 
-
 ## Description
 
 A simple replacement for the default select_one field. Use this as a starting template when creating your own select_one field plug-in.
+
+[![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip)
 
 ## Default SurveyCTO feature support
 
