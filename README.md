@@ -35,6 +35,15 @@ A simple replacement for the default select_one field. Use this as a starting te
 
 **Note: this plug-in works well for the likert-min appearance when the field label is short, and does not contain an image, audio, or video. This is a known limitation currently.
 
+## Expanded feature support
+
+In addition to supporting the default SurveyCTO features listed above, this field plug-in offers the following expanded functionality:
+
+1. Support for RTL languages in choice labels  
+    If your choice labels are in a language that uses a right-to-left alphabet (like Arabic), the choices will be right-justified, with the radio buttons to the right of the choice labels. If your form contains both right-to-left and left-to-right choice labels, the formatting will respond to the currently-selected form language.
+1. Support for HTML in choice labels  
+    This plug-in will allow HTML in choice labels to be rendered as HTML, even in Collect on Android and iOS.
+
 ## How to use
 
 **To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](baseline-select_one.fieldplugin.zip) file from this repo, and attach it to your form.
