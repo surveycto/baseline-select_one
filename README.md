@@ -44,6 +44,8 @@ In addition to supporting the default SurveyCTO features listed above, this fiel
     If your choice labels are in a language that uses a right-to-left alphabet (like Arabic), the choices will be right-justified, with the radio buttons to the right of the choice labels. If your form contains both right-to-left and left-to-right choice labels, the formatting will respond to the currently-selected form language.
 1. Support for HTML in choice labels  
     This plug-in will allow HTML in choice labels to be rendered as HTML, even in Collect on Android and iOS.
+1. Support for HTML in field references  
+    If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
 
 ## How to use
 
