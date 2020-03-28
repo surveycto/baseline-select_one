@@ -49,7 +49,7 @@ In addition to supporting the default SurveyCTO features listed above, this fiel
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](baseline-select_one.fieldplugin.zip) file from this repo, and attach it to your form.
+**To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
@@ -65,7 +65,14 @@ To create your own field plug-in using this as a template, follow these steps:
 ## More resources
 
 * **Test form**  
-You can find a form definition in this repo here: [extras/test-form](extras/test-form). This form will help you compare your text field plug-in to the default text field. [Click here for instructions](/extras/test-form/README.md).
+This form will help you explore the differences between this field plug-in and the default text field.  
+[Download test form package](https://github.com/surveycto/baseline-select_one/raw/master/extras/test-form/test-form-package-baseline-select_one.zip)  
+[Instructions for test form](/extras/test-form/README.md)
 
 * **Developer documentation**  
-More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+Instructions and resources for developing your own field plug-ins.  
+[https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+
+* **User documentation**  
+How to get started using field plug-ins in your SurveyCTO form.  
+[https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html)
