@@ -8,7 +8,7 @@
 
 ## Description
 
-A simple replacement for the default select_one field. Use this as a starting template when creating your own select_one field plug-in.
+A simple replacement for the default select_one field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a select_one field.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip)
 
