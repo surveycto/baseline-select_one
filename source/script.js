@@ -1,4 +1,4 @@
-/* global fieldProperties, setAnswer, goToNextField */
+/* global fieldProperties, setAnswer, goToNextField, clearAnswer */
 
 // References to the supported choice containers
 var radioButtonsContainer = document.getElementById('radio-buttons-container') // default radio buttons
@@ -23,7 +23,7 @@ if (fieldProperties.APPEARANCE.includes('minimal') === true) {
   selectDropDownContainer.style.display = 'block' // show the select dropdown
 } else if (fieldProperties.APPEARANCE.includes('likert') === true) { // likert appearance
   radioButtonsContainer.parentElement.removeChild(radioButtonsContainer) // remove the default radio buttons
-  selectDropDownContainer.parentElement.removeChild(selectDropDownContainer) // remove the select dropdown contrainer
+  selectDropDownContainer.parentElement.removeChild(selectDropDownContainer) // remove the select dropdown container
   likertContainer.style.display = 'flex' // show the likert container
   // likert-min appearance
   if (fieldProperties.APPEARANCE.includes('likert-min') === true) {
@@ -39,7 +39,7 @@ if (fieldProperties.APPEARANCE.includes('minimal') === true) {
     radioButtonsContainer.dir = 'rtl'
   }
 
-  selectDropDownContainer.parentElement.removeChild(selectDropDownContainer) // remove the select dropdown contrainer
+  selectDropDownContainer.parentElement.removeChild(selectDropDownContainer) // remove the select dropdown container
   likertContainer.parentElement.removeChild(likertContainer) // remove the likert container
   // quick appearance
   if (fieldProperties.APPEARANCE.includes('quick') === true) {
