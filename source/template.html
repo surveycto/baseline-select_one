@@ -50,11 +50,11 @@
 
 <!-- This is what will be shown if the field has the 'minimal' appearance -->
 <select class="choices-container default-answer-text-size" id="select-dropdown-container">
-  <option value="">Select one answer</option>
+  <option value="" dir="auto">Select one answer</option>
   {{#CHOICES}}
   <option 
     value="{{CHOICE_VALUE}}" 
-    {{#CHOICE_SELECTED}}selected{{/CHOICE_SELECTED}}>
+    {{#CHOICE_SELECTED}}selected{{/CHOICE_SELECTED}}  dir="auto">
     {{CHOICE_LABEL}}
   </option>
   {{/CHOICES}}
