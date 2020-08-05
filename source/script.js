@@ -11,6 +11,12 @@ var likertContainer = document.getElementById('likert-container') // likert
 if (fieldProperties.APPEARANCE.includes('minimal') === true) {
   radioButtonsContainer.parentElement.removeChild(radioButtonsContainer) // remove the default radio buttons
   likertContainer.parentElement.removeChild(likertContainer) // remove the likert container
+  var topChoice = document.querySelector('#top-choice')
+  var language = fieldProperties.LANGUAGE
+  if ((language === 'arabic') || (language === 'Arabic') || (language === 'عربى')) { // Change language of "Select one answer" if language is Arabic
+    topChoice.innerHTML = 'حدد إجابة واحدة'
+  }
+
   selectDropDownContainer.style.display = 'block' // show the select dropdown
 } else if (fieldProperties.APPEARANCE.includes('likert') === true) { // likert appearance
   radioButtonsContainer.parentElement.removeChild(radioButtonsContainer) // remove the default radio buttons
