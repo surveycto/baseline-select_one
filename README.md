@@ -66,7 +66,7 @@ For more information about developing your own field plug-ins, please read the [
 | `likert-min` appearance | Yes* |
 | `likert-mid` appearance | No |
 
-**Note: this plug-in works well for the likert-min appearance when the field label is short, and does not contain an image, audio, or video. This is a known limitation currently.
+**Note:** this plug-in works well for the `likert-min` *appearance* when the field label is short, and does not contain an image, audio, or video. This is a known limitation currently.
 
 ## More resources
 
