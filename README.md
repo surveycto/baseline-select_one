@@ -8,11 +8,43 @@
 
 ## Description
 
-A simple replacement for the default select_one field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a select_one field.
+A simple replacement for the default *select_one* field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a *select_one* field.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip)
 
-## Default SurveyCTO feature support
+### Features
+
+In addition to supporting the default SurveyCTO features listed below, this field plug-in offers the following expanded functionality:
+
+1. Support for RTL languages  
+    If your *label*, *hint*, or choice labels are in a language that uses a right-to-left alphabet (like Arabic), they will be right-justified, and the radio buttons will be to the right of the choice labels. If your form contains both right-to-left and left-to-right choice labels, the formatting will respond to the currently-selected form language.
+1. Support for HTML in choice labels  
+    This plug-in will allow HTML in choice labels to be rendered as HTML, even in Collect on Android and iOS.
+1. Support for HTML in field references  
+    If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
+
+### Data format
+
+This field plug-in requires the `select_one` field type.
+
+## How to use
+
+### Getting started
+
+**To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip) file from this repo, specify this field plug-in as a custom field *appearance* in the form design (like in [the test form](https://github.com/surveycto/baseline-select_one/raw/master/extras/test-form/test-form-package-baseline-select_one.zip)), and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
+
+**To create your own** field plug-in using this as a template, follow these steps:
+
+1. Fork this repo
+1. Make changes to the files in the `source` directory.  
+    * **Note:** be sure to update the `manifest.json` file as well.
+1. Zip the updated contents of the `source` directory.
+1. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
+1. You may then attach your new .fieldplugin.zip file to your form as normal.
+
+For more information about developing your own field plug-ins, please read the [developer documentation](https://github.com/surveycto/Field-plug-in-resources).
+
+### Default SurveyCTO feature support
 
 | Feature / Property | Support |
 | --- | --- |
@@ -35,32 +67,6 @@ A simple replacement for the default select_one field, plus a few improvements (
 | `likert-mid` appearance | No |
 
 **Note: this plug-in works well for the likert-min appearance when the field label is short, and does not contain an image, audio, or video. This is a known limitation currently.
-
-## Expanded feature support
-
-In addition to supporting the default SurveyCTO features listed above, this field plug-in offers the following expanded functionality:
-
-1. Support for RTL languages  
-    If your *label*, *hint*, or choice labels are in a language that uses a right-to-left alphabet (like Arabic), they will be right-justified, and the radio buttons will be to the right of the choice labels. If your form contains both right-to-left and left-to-right choice labels, the formatting will respond to the currently-selected form language.
-1. Support for HTML in choice labels  
-    This plug-in will allow HTML in choice labels to be rendered as HTML, even in Collect on Android and iOS.
-1. Support for HTML in field references  
-    If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
-
-## How to use
-
-**To use this plug-in as-is**, just download the [baseline-select_one.fieldplugin.zip](https://github.com/surveycto/baseline-select_one/raw/master/baseline-select_one.fieldplugin.zip) file from this repo, and attach it to your form.
-
-To create your own field plug-in using this as a template, follow these steps:
-
-1. Fork this repo
-1. Make changes to the files in the `source` directory.
-
-    * **Note:** be sure to update the `manifest.json` file as well.
-
-1. Zip the updated contents of the `source` directory.
-1. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
-1. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 ## More resources
 
