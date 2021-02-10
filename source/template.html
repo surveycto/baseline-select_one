@@ -50,7 +50,14 @@
 
 <!-- This is what will be shown if the field has the 'minimal' appearance -->
 <select class="choices-container default-answer-text-size" id="select-dropdown-container" dir="auto">
-  <option value="">{{QUESTION_PLACEHOLDER_LABEL}}</option>
+  <option value="">
+    {{#QUESTION_PLACEHOLDER_LABEL}}
+      {{QUESTION_PLACEHOLDER_LABEL}}
+    {{/QUESTION_PLACEHOLDER_LABEL}}
+    {{^QUESTION_PLACEHOLDER_LABEL}}
+      Select one answer
+    {{/QUESTION_PLACEHOLDER_LABEL}}
+  </option>
   {{#CHOICES}}
   <option 
     value="{{CHOICE_VALUE}}" 
