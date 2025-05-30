@@ -111,10 +111,19 @@ if (fieldProperties.APPEARANCE.includes('minimal') === true) {
   }
 }
 
-// If the field label or hint contain any HTML that isn't in the form definition, then the < and > characters will have been replaced by their HTML character entities, and the HTML won't render. We need to turn those HTML entities back to actual < and > characters so that the HTML renders properly. This will allow you to render HTML from field references in your field label or hint.
-function unEntity (str) {
-  return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+/**
+ * Converts common HTML entities back to their original characters.
+ * Useful for rendering HTML content that has been entity-encoded.
+ */
+function unEntity(str) {
+  return str
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, '&');
 }
+
 if (fieldProperties.LABEL) {
   document.querySelector('.label').innerHTML = unEntity(fieldProperties.LABEL)
 }
